@@ -12,7 +12,7 @@
 # print(id(9))
 # my_new_str = str (1)
 # my_new_str = str (4.5)
-print(my_new_str)
+#print(my_new_str)
 
 
 
