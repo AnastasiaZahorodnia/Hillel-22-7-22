@@ -9,6 +9,11 @@ match_2 = 5 >= 5
 print(match_2)
 match_3 = 5 <= 5
 print(match_3, type(match_3))
+match_4 = 5 is 5
+match_5 = type(5)==type(5)
+print(match_4, match_5, type(match_5))
+match_6=bool(5)==bool(5)
+print(match_6)
 
 true_01 = (True and True) or False
 print(true_01, type(true_01))
