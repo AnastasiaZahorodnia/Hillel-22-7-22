@@ -12,7 +12,7 @@ if operand_third == "+":
         result = operand_first + operand_second
 elif operand_third == "-":
         result = operand_first - operand_second
-elif operand_first == "*":
+elif operand_third == "*":
         result = operand_first * operand_second
 elif operand_third == "/":
         result = operand_first / operand_second
