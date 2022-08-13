@@ -1,24 +1,37 @@
-operand_first = input("Please tell me first number")
-if operand_first.isdigit():
-    operand_first = int(operand_first)
-else: operand_first = float(operand_first)
-operand_second = input("Please tell me the second number")
-if operand_second.isdigit():
-    operand_second = int(operand_second)
-else: operand_second = float(operand_second)
-operand_third = input("Please tell me action")
+while True:
+    operand_first = input("Please tell me first number")
+    if operand_first == "exit":
+        break
+    if operand_first.isdigit():
+        operand_first = int(operand_first)
+    else:
+        operand_first = float(operand_first)
+    operand_second = input("Please tell me the second number")
+    if operand_second == "exit":
+        break
+    if operand_second.isdigit():
+        operand_second = int(operand_second)
+    else:
+        operand_second = float(operand_second)
+    operand_third = input("Please tell me action")
+    if operand_third == "exit":
+        break
 
-if operand_third == "+":
+    if operand_third == "+":
         result = operand_first + operand_second
-elif operand_third == "-":
+    elif operand_third == "-":
         result = operand_first - operand_second
-elif operand_third == "*":
+    elif operand_third == "*":
         result = operand_first * operand_second
-elif operand_third == "/":
-        result = operand_first / operand_second
-elif operand_third == "**":
+    elif operand_third == "/":
+        try:
+            result = operand_first / operand_second
+        except ZeroDivisionError:
+            result = "Zero Division Error"
+    elif operand_third == "**":
         result = operand_first ** operand_second
-else:
+    else:
         result = "Error"
 
-print(result)
+    print(result)
+

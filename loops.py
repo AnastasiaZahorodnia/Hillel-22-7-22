@@ -1,36 +1,37 @@
-#while True:
+
 user_value = input("Tell me something")
 
+
 value_1 = ""
-for letter in user_value:
-    if letter.isupper() == True:
-        value_1 = value_1 + letter
-print(value_1)
-
-collector_letters = ""
-for index, element in enumerate(user_value):
-    if element == " ":
-        collector_letters += str(index)
-print(collector_letters)
-
 vowels_1 = ""
 letters_2 = "aeuioyAEUIOY"
-for vowels_letters in user_value:
-    if vowels_letters in letters_2:
-        vowels_1 += vowels_letters
-print(vowels_1)
-
-
-
+collector_letters = ""
 counter = 0
+is_break = False
 
-for letter_3 in user_value:
-    counter += 1
+for index, element in enumerate(user_value):
+
+    if element.isdigit():
+        counter = counter + 1
+    else:
+        counter = 0
 
     if counter == 3:
         print("counter achieved")
+        is_break = True
         break
-    else:
-        print("counter did not achieve")
 
-print("loop is finished")
+    if element == " ":
+        collector_letters += str(index)
+        collector_letters += ","
+
+    if element in letters_2:
+        vowels_1 += element
+
+    if element.isupper():
+        value_1 = value_1 + element
+
+if is_break == False:
+    print("Job is done")
+
+print(vowels_1, collector_letters, value_1 )
