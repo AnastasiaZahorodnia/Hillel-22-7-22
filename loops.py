@@ -2,10 +2,10 @@
 user_value = input("Tell me something")
 
 
-value_1 = ""
-vowels_1 = ""
-letters_2 = "aeuioyAEUIOY"
-collector_letters = ""
+add_capital_letters = ""
+add_vowels = ""
+vowels_letters = "aeuioyAEUIOY"
+index_number = ""
 counter = 0
 is_break = False
 
@@ -22,16 +22,17 @@ for index, element in enumerate(user_value):
         break
 
     if element == " ":
-        collector_letters += str(index)
-        collector_letters += ","
+        index_number += str(index)
+        index_number += ","
 
-    if element in letters_2:
-        vowels_1 += element
+    if element in vowels_letters:
+        add_vowels += element
 
     if element.isupper():
-        value_1 = value_1 + element
+        add_capital_letters += element
 
 if is_break == False:
     print("Job is done")
 
-print(vowels_1, collector_letters, value_1 )
+print(add_vowels, index_number)
+print(add_capital_letters)
