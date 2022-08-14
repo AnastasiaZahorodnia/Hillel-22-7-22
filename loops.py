@@ -22,8 +22,7 @@ for index, element in enumerate(user_value):
         break
 
     if element == " ":
-        index_number += str(index)
-        index_number += ","
+        index_number = index_number + str(index) + ","
 
     if element in vowels_letters:
         add_vowels += element
