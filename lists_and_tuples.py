@@ -1,6 +1,6 @@
 new_str = input("Tell me something:").split()
 print(new_str[2::3])
-# djn = el for el in new_str if new_str
+# = el for el in new_str if new_str
 
 incoming_list = [1, 2.1, "f", "2", 3, "1", 18, "df"]
 outgoing_list = []
