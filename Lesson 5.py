@@ -4,7 +4,7 @@ value_1 = ""
 collector_letters = ""
 vowels_1 = ""
 counter = 0
-
+#
 for index, letter in enumerate(user_value):
     if letter.isupper():
         value_1 = value_1 + letter
