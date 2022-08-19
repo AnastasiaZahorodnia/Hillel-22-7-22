@@ -19,3 +19,4 @@ value = 5
 print(value, type(value))
 new_line_1 = int(10.5)
 print(new_line_1, type(new_line_1))
+#
