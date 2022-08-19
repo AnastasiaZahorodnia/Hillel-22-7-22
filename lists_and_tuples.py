@@ -4,6 +4,7 @@ print(new_str[2::3])
 
 incoming_list = [1, 2.1, "f", "2", 3, "1", 18, "df"]
 outgoing_list = []
+
 for point_element in incoming_list:
 
     if isinstance(point_element, float):
@@ -18,7 +19,7 @@ for point_element in incoming_list:
     elif isinstance(point_element, str) and point_element.isdigit():
         outgoing_list.append(int(point_element) * 3)
 
-    elif isinstance(point_element, str):
+    else:
         outgoing_list.append(-1)
 
 print(outgoing_list)
