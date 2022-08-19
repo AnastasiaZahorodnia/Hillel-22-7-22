@@ -42,7 +42,7 @@
  #   result = "Error"
 
 #print(result)
-
+#
 operand_first = input("Please tell me first number")
 if operand_first:
     operand_first = int(operand_first)
