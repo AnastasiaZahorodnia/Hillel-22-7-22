@@ -6,7 +6,7 @@ user_nickname = "Slim Shady"
 print(user_nickname, type(user_nickname))
 diploma_name = "Biotechnology"
 print(diploma_name, type(diploma_name) )
-sentence = "«Слава Украї́ні!» — українське вітання, національне гасло. "
+sentence = "«Слава Украї́ні!» — українське вітання, національне гасло."
 print(sentence, type(sentence))
 ######################################
 number_1 = 4
