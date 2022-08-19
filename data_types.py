@@ -10,3 +10,4 @@ second_root= value_1 ** 0.5
 print(second_root, type(second_root))
 division_remainder = value_1 % 2
 print(division_remainder, type(division_remainder))
+#
