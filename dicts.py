@@ -7,6 +7,7 @@ user_password = int(input("Password: "))
 #result = ''.join(chr(ord(letter) + user_password) for letter in
 #value_user)
 #print(result)
+
 import string
 
 encoded = {l: string.ascii_lowercase[(index + user_password) % 26] for index, l in enumerate(string.ascii_lowercase)}
