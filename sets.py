@@ -17,7 +17,7 @@ for i in data_inf_user1.intersection(data_inf_user2):
 print(f"True = {alpha_data}")
 print(not_same_numbers1.symmetric_difference(not_same_numbers2))
 
-#examples with |=, &=, -=, ^=
+#examples with |=, &=, -=,  ^=
 
 set_1 = {"a", "b", "c", "d", "e"}
 set_2 = {"c", "d", "f", "d", "s"}
