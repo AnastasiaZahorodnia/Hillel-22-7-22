@@ -10,6 +10,7 @@ print(out_list)
 
 
 # Homework, part 2. Using for loop
+
 outbound_list = []
 for item in inbound_list:
     try:
